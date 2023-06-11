@@ -4,6 +4,51 @@
   box-sizing: border-box;
 }
 
+
+body {
+  background-color: #1a1a1d;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button,
+input {
+  background-color: #E5E5E5;
+  border: inherit;
+  padding: 10px;
+  font-size: 14pt;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+#container div {
+  display: flex;
+  justify-content: center;
+
+}
+
+input {
+  border: 2px solid #fd9d03;
+  outline-color: #fd9d03;
+  width: 100%;
+  border-radius: 8px 0 0 8px;
+}
+
+button {
+  background-color: #fd9d03;
+  border-radius: 0 8px 8px 0;
+}
+
+button:hover {
+  cursor: pointer;
+  padding: 15px;
+  filter: brightness(70%);
+}
+
+#result {
+  font-size: 16pt;
+}
+
 #container {
   margin: auto;
   width: min(600px, 80%);
