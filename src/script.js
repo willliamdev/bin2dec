@@ -12,6 +12,7 @@ function numberHandler(binaryNumber) {
       return
     }
   }
+
   return binaryArray.reverse()
 }
 
