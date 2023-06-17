@@ -37,6 +37,8 @@ function app() {
 
   const binaryNumber = numberHandler(binary, modal)
   const decimalNumber = parseBinarytoDecimal(binaryNumber)
-  result.innerText = `Decimal: ${decimalNumber}`
-  return
+
+  if (decimalNumber) {
+    result.innerText = `Decimal: ${decimalNumber}`
+  }
 }
