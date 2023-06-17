@@ -4,13 +4,11 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: #1a1a1d;
   color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Fira Code', monospace;
 }
-
 
 dialog {
   padding: 15px;
@@ -32,6 +30,10 @@ dialog button {
   width: 100%;
 }
 
+button {
+  font-weight: bold;
+  color: #fff;
+}
 
 button,
 input {
@@ -39,7 +41,7 @@ input {
   border: inherit;
   padding: 10px;
   font-size: 14pt;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: inherit;
 }
 
 #container .form {
@@ -48,10 +50,12 @@ input {
 }
 
 .form input {
-  border: 2px solid #fd9d03;
-  outline-color: #fd9d03;
   width: 100%;
   border-radius: 8px 0 0 8px;
+}
+
+.form input:focus {
+  outline: #1a1a1d;
 }
 
 .form button {
@@ -78,7 +82,7 @@ button:hover {
   gap: 20px;
 }
 
-
-h1 {
+h1,
+#result {
   text-align: center;
 }
